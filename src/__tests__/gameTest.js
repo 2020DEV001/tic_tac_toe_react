@@ -9,4 +9,9 @@ describe('Game', () => {
 
         expect(game.find(Board).length).toBe(1);
     });
+    it('first turn should be an X', () => {
+        const game = shallow(<Game />);
+
+        expect(game.state().player).toBe("X");
+    });
 });
