@@ -14,4 +14,9 @@ describe('Game', () => {
 
         expect(game.state().player).toBe("X");
     });
+    it('should have a Board with a player', () => {
+        const game = shallow(<Game />);
+
+       expect(game.find(Board).props().player).toBe('X'); 
+    });
 });
