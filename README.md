@@ -16,6 +16,9 @@
 
 - If all nine squares are filled and neither player has three in a row, the game is a draw.
 
+## To install node modules Application
+$ npm i
+
 ## Run Application
 
 ```bash
